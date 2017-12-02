@@ -1,0 +1,28 @@
+include ../mixins/_mixin
+.bottom
+	.copyrights
+		h2(class="copyrights--header") Piroll Design, Inc.
+		p(class="copyrights--text") © 2017 Piroll. All rights reserved. Designed by robirurk.
+	.contacts
+		a(href="mailto: stasmotorny@gmail.com" class="contacts--link") stasmotorny@gmail.com
+		a(href="tel:+380638374595" class="contacts--link") +380638374595
+	.bottom-menu-social
+		.bottom-menu
+			.bottom-menu__left
+				ul(class="bottom-menu__list")
+					- var i = ["Projects", "About", "Services", "Career"];
+						for name in i
+							li(class="bottom-menu__list--point")
+								a(class= "bottom-menu__list--link" href="#")=name
+			.bottom-menu__right
+				ul(class="bottom-menu__list")
+					- var i = ["News", "Events", "Contact", "Legals"];
+						for name in i
+							li(class="bottom-menu__list--point")
+								a(class= "bottom-menu__list--link" href="#")=name
+		.bottom-social
+			ul(class="bottom-social__list")
+				+social-media("http://facebook.com", "Facebook")
+				+social-media("http://twiter.com", "Twitter")
+				+social-media("http://instagram.com", "Instagram") 
+				+social-media("http://dribbble.com", "Dribbble")

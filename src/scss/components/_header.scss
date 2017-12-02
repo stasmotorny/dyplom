@@ -1,0 +1,21 @@
+.top{
+	padding-left: 96px;
+	padding-right: 96px;
+	display: flex;
+	flex-direction: row;
+}
+.header-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header-menu__point--link{
+	text-decoration: none;
+	color: #191919;
+}
+.header-menu__point{
+	list-style-type: none;
+}
+.header-menu__point--link:hover{
+	color: #10c9c3;
+}
