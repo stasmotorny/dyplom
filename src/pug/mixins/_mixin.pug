@@ -1,3 +1,11 @@
 mixin social-media(href, name)
 	li(class="bottom-social__list--point")
 		a(href=href class="bottom-social__list--link")= name
+
+mixin contact(name, contacts, href)
+	a(class="contact" href=href)
+		span(class="contact-type")= name
+		= contacts
+
+mixin comment(type, placeholder)
+	input(type=type, placeholder=placeholder)
