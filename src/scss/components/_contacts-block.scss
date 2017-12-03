@@ -15,12 +15,12 @@
 }
 .inputs
 	.btn{
-	width: 184px;
-	height: 56px;
-	background-color: #10c9c3;
-	border-style: none;
-	color: #ffffff;
-	padding-left: 0;
+		width: 184px;
+		height: 56px;
+		background-color: #10c9c3;
+		border-style: none;
+		color: #ffffff;
+		padding-left: 0;
 }
 .inputs
 	.btn:hover{
@@ -99,6 +99,7 @@
 		height: 48px;
 		margin-bottom: 32px;
 		padding-left: 24px;
+		border-style: none;
 			@media (min-width: 600px){
 			width: 40%;
 			}
@@ -111,6 +112,7 @@
 		height: 48px;
 		margin-bottom: 32px;
 		padding-left: 24px;
+		border-style: none;
 	}
 .comments{
 	width: 100%;

@@ -1,12 +1,15 @@
 .top{
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-left: 16px;
+	padding-right: 16px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+		@media (min-width: 450px){
+			flex-direction: row;
+		}
 		@media (min-width: 700px){
 			padding-left: 64px;
 			padding-right: 64px;
@@ -20,6 +23,8 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 0;
+	margin-top: 32px;
 }
 .header-menu__point--link{
 	text-decoration: none;
@@ -28,7 +33,12 @@
 }
 .header-menu__point{
 	list-style-type: none;
-	margin-left: 32px;
+	margin-left: 8px;
+	margin-right: 8px;
+		@media (min-width: 500px){
+			margin-left: 32px;
+			margin-right: 0;
+		}
 }
 .header-menu__point--link:hover{
 	color: #10c9c3;

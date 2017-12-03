@@ -1,3 +1,9 @@
 main(class="main-conent")
 	h1(class="main--header") UI\UX & Graphic Designer
 	p(class="main--text") I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.
+.portfolio
+	- var o = 9;
+		- for (var p = 1; p<=o; p++)
+			.image-container
+				a(class="image-container__link" href="#")
+					img(class="image-container__image" src="img/" +p + '.jpg')

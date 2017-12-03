@@ -2,6 +2,16 @@
 	background-color: #3e3e3e;
 	padding-top: 120px;
 	padding-bottom: 120px;
+	padding-left: 16px;
+	padding-right: 16px;
+		@media (min-width: 700px){
+			padding-left: 64px;
+			padding-right: 64px;
+		}
+		@media (min-width: 900px){
+			padding-left: 96px;
+			padding-right: 96px;
+		}
 }
 .about-head--header{
 	font-family: Montserrat;
@@ -30,6 +40,16 @@
 		flex-direction: row;
 		justify-content: space-around;
 		}
+	padding-left: 16px;
+	padding-right: 16px;
+		@media (min-width: 700px){
+			padding-left: 64px;
+			padding-right: 64px;
+		}
+		@media (min-width: 900px){
+			padding-left: 96px;
+			padding-right: 96px;
+		}
 }
 .statistic__data{
 	display: flex;
@@ -54,23 +74,52 @@
 	margin-top: 0;
 }
 .about-me{
+	background-image: url(../img/AboutMeBackground.jpg);
+	background-size: cover;
 	display: flex;
 	align-items: center;
-	padding-top: 136px;
+		@media (min-width: 600px){
+			padding-top: 136px;
+		}
+	padding-top: 16px;
 	padding-left: 56%;
 	padding-bottom: 136px;
+	padding-left: 16px;
+	padding-right: 16px;
+		@media (min-width: 700px){
+			padding-left: 64px;
+			padding-right: 64px;
+		}
+		@media (min-width: 900px){
+			padding-left: 96px;
+			padding-right: 96px;
+		}
+}
+.about-me__text-block{
+		@media (min-width: 415px){
+			padding-left: 40%;
+		}
+		@media (min-width: 600px){
+			padding-left: 60%;
+		}
 }
 .about-me__text-block--header{
 	font-family: Montserrat;
+	@media (min-width: 600px){
+			margin-bottom: 88px;
+		}
 	font-size: 30px;
 	font-weight: bold;
 	margin-top: 0;
-	margin-bottom: 88px;
+	color: #ffffff;
 }
 .about-me__text-block--text{
 	font-family: NunitoSans;
 	font-size: 16px;
-	color: #787878;
+		@media (min-width: 415px){
+				color: #787878;
+			}
+	color: #ffffff;
 	margin-top: 0; 
 }
 .about-me{
@@ -82,6 +131,16 @@
 	align-items: center;
 	padding-bottom: 96px;
 	padding-top: 96px;
+	padding-left: 16px;
+	padding-right: 16px;
+		@media (min-width: 700px){
+			padding-left: 64px;
+			padding-right: 64px;
+		}
+		@media (min-width: 900px){
+			padding-left: 96px;
+			padding-right: 96px;
+		}
 }
 .order--header{
 	font-family: Montserrat;
@@ -112,4 +171,7 @@
 	font-size: 12px;
 	line-height: 7;
 	letter-spacing: 1.2px;
+}
+.order--btn:hover{
+	transform: scale(1.1);
 }
