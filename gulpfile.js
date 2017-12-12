@@ -57,7 +57,9 @@ gulp.task('browserSync', ['sass', 'pug'], function() {
 
 gulp.task('compress', function() {
     gulp.src('src/img/**/*')
-        .pipe(imagemin())
+        .pipe(imagemin({
+            progressive: true
+        }))
         .pipe(gulp.dest('app/img'))
 });
 

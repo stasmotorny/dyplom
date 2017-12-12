@@ -1,12 +1,13 @@
 .bottom	{
 	background-color: #141414;
-	padding: 32px;
+	padding: 16px;
 	display: flex;
 	flex-direction: column;
 		@media (min-width: 700px){
 			flex-direction: row;
 			justify-content: space-between;
 			padding: 64px;
+			align-items: flex-start;
 		}
 		@media (min-width: 900px){
 			padding: 96px;
@@ -20,16 +21,17 @@
 	justify-content: space-between;
 }
 .copyrights--header{
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 18px;
 	color: #ffffff;
+	margin-top: 8px;
 	text-align: center;
 		@media (min-width: 700px){
 	 	text-align: left;
 	 }
 }
 .copyrights--text{
-	font-family: NunitoSans;
+	font-family: $other-font;
 	font-size: 15px;
 	color: #bcbcbc;
 	text-align: center;
@@ -45,6 +47,7 @@
 .contacts{
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 }
 .contacts--link{
 	margin-top: 8px;
@@ -52,12 +55,12 @@
 }
 .contacts--link, .bottom-menu__list--link, .bottom-social__list--link{
 	text-decoration: none;
-	font-family: NunitoSans;
+	font-family: $other-font;
 	font-size: 15px;
 	color: #bcbcbc;
 }
 .contacts--link:hover, .bottom-menu__list--link:hover, .bottom-social__list--link:hover{
-	color: #10c9c3;
+	color: $btn-color;
 }
 .bottom-menu__list--point, .bottom-social__list--point{
 	list-style-type: none;
@@ -71,6 +74,7 @@
 .bottom-menu__list{
 	padding-right: 20px;
 	padding-left: 20px;
+	margin-top: 0;
 		@media (min-width: 600px){
 			padding-right: 0;
 			padding-left: 40px;
@@ -79,6 +83,7 @@
 .bottom-social__list{
 	padding-right: 20px;
 	padding-left: 20px;
+	margin-top: 0;
 		@media (min-width: 600px){
 			padding-right: 0;
 			padding-left: 40px;
