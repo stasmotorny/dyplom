@@ -1,7 +1,7 @@
+include ../mixins/_mixin
 header(class="top")
-	a(class="logo" href="index.html")
+	a(class="logo" href="home.html")
 	ul(class="header-menu")
-		- var i = ["HOME", "ABOUT", "CONTACT"];
-		for name in i
-			li(class="header-menu__point")
-				a(class= "header-menu__point--link" href="#")=name
+		+header-menu("HOME", "index.html")
+		+header-menu("ABOUT", "about.html")
+		+header-menu("CONTACT", "contact.html")

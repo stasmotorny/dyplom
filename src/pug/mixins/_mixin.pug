@@ -1,3 +1,15 @@
+mixin header-menu(name, href)
+	li(class="header-menu__item")
+		a(class="header-menu__item--link" href=href)= name
+
 mixin social-media(href, name)
 	li(class="bottom-social__list--point")
 		a(href=href class="bottom-social__list--link")= name
+
+mixin contact(name, contacts, href)
+	a(class="contact" href=href)
+		span(class="contact-type")= name
+		= contacts
+
+mixin comment(type, placeholder, id)
+	input(type=type, placeholder=placeholder, id=id, 'required')

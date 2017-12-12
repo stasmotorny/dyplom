@@ -1,0 +1,136 @@
+.wrap{
+	background-color: #f5f5f5;
+	padding-bottom: 96px;
+	padding-top: 96px;
+	padding-left: 32px;
+	padding-right: 32px;
+		@media (min-width: 700px){
+			padding-left: 64px;
+			padding-right: 64px;
+		}
+		@media (min-width: 900px){
+			padding-left: 96px;
+			padding-right: 96px;
+		}
+}
+.inputs
+	.btn{
+		width: 184px;
+		height: 56px;
+		background-color: $btn-color;
+		border-style: none;
+		color: #ffffff;
+		padding-left: 0;
+}
+.inputs
+	.btn:hover{
+		transform: scale(1.1);
+		transition: transform 0.5s;
+	}
+.contact-forms{
+	display: flex;
+	flex-direction: column;
+		@media (min-width: 600px){
+			flex-direction: row;
+		}
+	margin-bottom: 96px;
+}
+.name-mail{
+	display: flex;
+	margin-top: 32px;
+	justify-content: space-between;
+		@media (min-width: 600px){
+			flex-direction: row;
+		}
+	flex-direction: column;
+}
+.contact-info{
+	@media (min-width: 600px){
+		width: 50%;
+		margin-right: 32px;
+	}
+}
+#inputs__comment{
+	resize: none;
+	height: 48px;
+	margin-bottom: 32px;
+	padding-left: 24px;
+	border-style: none;
+	font-family: $other-font;
+}
+#inputs__comment::placeholder {
+	vertical-align: middle;
+}
+.inputs{
+	display: flex;
+	flex-direction: column;
+}
+.contact-info__header{
+	font-family: $header-font;
+	font-size: 30px;
+	color: #171717;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+.contact-info__text{
+	font-family: $text-font;
+	font-size: 16px;
+	color: #787878;
+	margin-bottom: 32px;
+}
+.contact{
+	text-decoration: none;
+	font-family: $text-font;
+	font-size: 16px;
+	color: #787878;
+	margin-bottom: 8px;
+}
+.contact-type{
+	font-family: $text-font;
+	font-size: 16px;
+	color: #171717;
+	font-weight: bold;
+}
+.contact-us{
+	display: flex;
+	flex-direction: column;
+}
+.address{
+	font-family: $text-font;
+	font-size: 16px;
+	color: #787878;
+	margin-bottom: 8px;
+}
+.contact-type{
+	font-family: $text-font;
+	font-size: 16px;
+	color: #171717;
+}
+.name-mail
+	input{
+		height: 48px;
+		margin-bottom: 32px;
+		padding-left: 24px;
+		border-style: none;
+		font-family: $other-font;
+			@media (min-width: 600px){
+			width: 40%;
+			}
+			@media (min-width: 800px){
+			width: 42%;
+			}
+	}
+.inputs
+	input{
+		height: 48px;
+		margin-bottom: 32px;
+		padding-left: 24px;
+		border-style: none;
+		font-family: $other-font;
+	}
+.comments{
+	width: 100%;
+}
+.map{
+	width: 100%;
+}
