@@ -1,9 +1,13 @@
 .about-head{
 	background-color: #3e3e3e;
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	padding-left: 16px;
 	padding-right: 16px;
+		@media (min-width: 600px){
+			padding-top: 96px;
+			padding-bottom: 96px;
+		}
 		@media (min-width: 700px){
 			padding-left: 64px;
 			padding-right: 64px;
@@ -34,11 +38,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 96px;
-	padding-bottom: 96px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 		@media (min-width: 600px){
 			flex-direction: row;
 			justify-content: space-around;
+			padding-top: 96px;
+			padding-bottom: 96px;
 		}
 	padding-left: 16px;
 	padding-right: 16px;
@@ -173,12 +179,9 @@
 	background-size: cover;
 	display: flex;
 	align-items: center;
-		@media (min-width: 600px){
-			padding-top: 136px;
-		}
-	padding-top: 16px;
+	padding-top: 80px;
 	padding-left: 56%;
-	padding-bottom: 136px;
+	padding-bottom: 80px;
 	padding-left: 16px;
 	padding-right: 16px;
 		@media (min-width: 700px){
@@ -188,6 +191,8 @@
 		@media (min-width: 900px){
 			padding-left: 96px;
 			padding-right: 96px;
+			padding-bottom: 136px;
+			padding-top: 136px;
 		}
 		@media (min-width: 1200px){
 			background-size: 100% 100%;
@@ -204,7 +209,7 @@
 .about-me__text-block--header{
 	font-family: $header-font;
 	@media (min-width: 600px){
-			margin-bottom: 88px;
+			margin-bottom: 40px;
 		}
 	font-size: 30px;
 	font-weight: bold;
@@ -224,10 +229,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 96px;
-	padding-top: 96px;
+	padding-bottom: 40px;
+	padding-top: 40px;
 	padding-left: 16px;
 	padding-right: 16px;
+		@media (min-width: 600px){
+			padding-top: 96px;
+			padding-bottom: 96px;;
+		}
 		@media (min-width: 700px){
 			padding-left: 64px;
 			padding-right: 64px;

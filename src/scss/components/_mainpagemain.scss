@@ -11,8 +11,8 @@
 	align-items: center;
 	flex-direction: column;
 	background-color: #f6f6f6;
-	padding-top: 96px;
-	padding-bottom: 96px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	padding-left: 16px;
 	padding-right: 16px;
 	@media (min-width: 700px){
@@ -80,7 +80,11 @@
 .image-container__link div p{
 		opacity: 0;
 		transition: opacity 0s;
-		text-align: center;
+		text-align: left;
+		margin-left: 16px;
+		font-family: $header-font;
+		color: black;
+		font-weight: bold;
 }
 @media (min-width: 600px){
 	.image-container__link{
@@ -90,12 +94,13 @@
 	}
 	.image-container__link:hover > div{
 		background-color: rgba(255, 0, 0, 0.2);
-		transition: background-color 2s;
+		transition: background-color 1s;
 	}
 	.image-container__link:hover div p{
 		opacity: 1;
-		transition: opacity 2s;
+		transition: opacity 1s;
 	}
 }
+
 
 
