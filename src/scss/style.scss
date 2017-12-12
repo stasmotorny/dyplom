@@ -1,4 +1,33 @@
+@font-face {
+	font-family: Montserrat;
+	src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+	font-family: Myriad Pro;
+	src: url("../fonts/Myriad Pro Regular.ttf");
+}
+@font-face {
+	font-family: NunitoSans;
+	src: url("../fonts/Nunito-Regular.ttf");
+}
+@font-face {
+	font-family: Starwars;
+	src: url("../fonts/STARWARS.ttf");
+}
+@import "components/_sprite";
+
 //header menu
+@import "components/_variables";
 @import "components/_header";
 @import "components/_mainpagemain";
 @import "components/_footer";
+@import "components/_contacts-block";
+@import "components/_about";
+@import "components/_sprite";
+@import "components/_error";
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
