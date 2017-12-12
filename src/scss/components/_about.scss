@@ -14,7 +14,7 @@
 		}
 }
 .about-head--header{
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 38px;
 	text-align: center;
 	color: #ffffff;
@@ -22,7 +22,7 @@
 	margin-top: 0;
 }
 .about-head--text{
-	font-family: NunitoSans;
+	font-family: $other-font;
 	font-size: 18px;
 	text-align: center;
 	color: #ffffff;
@@ -30,21 +30,21 @@
 	margin-top: 0;
 }
 .statistic{
-	background-color: #10c9c3;
+	background-color: $btn-color;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 96px;
 	padding-bottom: 96px;
 		@media (min-width: 600px){
-		flex-direction: row;
-		justify-content: space-around;
+			flex-direction: row;
+			justify-content: space-around;
 		}
 	padding-left: 16px;
 	padding-right: 16px;
 		@media (min-width: 700px){
-			padding-left: 64px;
-			padding-right: 64px;
+			padding-left: 60px;
+			padding-right: 60px;
 		}
 		@media (min-width: 900px){
 			padding-left: 96px;
@@ -54,24 +54,119 @@
 .statistic__data{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
+	@media (min-width: 600px){
+		margin-left: 8px;
+	}
 }
 .statistic__data--number{
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 18px;
 	font-weight: bold;
 	color: #ffffff;
 	margin-bottom: 16px;
 	margin-top: 0;
+	text-align: center;
+	@media (min-width: 780px){
+		text-align: left;
+	}
 }
 .statistic__data--name{
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 12px;
 	color: #ffffff;
 	margin-bottom: 32px;
 		@media (min-width: 600px){
-		margin-bottom: 0;
+			margin-bottom: 0;
 		}
 	margin-top: 0;
+}
+.statistic__data-first:before{
+	content: "";
+	width: 47px;
+	height: 47px;
+	display: block;
+	@include sprite($case);
+	margin-left: auto;
+	margin-right: auto;
+		@media (min-width: 600px){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+}
+.statistic__data-first{
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 780px){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+}
+.statistic__data-second{
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 780px){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+}
+.statistic__data-third{
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 780px){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+}
+.statistic__data-fourth{
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 780px){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+}
+.statistic__data-second:before{
+	content: "";
+	width: 47px;
+	height: 47px;
+	display: block;
+	@include sprite($clock);
+	margin-left: auto;
+	margin-right: auto;
+}
+.statistic__data-third:before{
+	content: "";
+	width: 47px;
+	height: 47px;
+	display: block;
+	@include sprite($heart);
+	margin-left: auto;
+	margin-right: auto;
+		@media (min-width: 600px){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+}
+.statistic__data-fourth:before{
+	content: "";
+	width: 47px;
+	height: 47px;
+	display: block;
+	@include sprite($star);
+	margin-left: auto;
+	margin-right: auto;
+		@media (min-width: 600px){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
 }
 .about-me{
 	background-image: url(../img/AboutMeBackground.jpg);
@@ -107,7 +202,7 @@
 		}
 }
 .about-me__text-block--header{
-	font-family: Montserrat;
+	font-family: $header-font;
 	@media (min-width: 600px){
 			margin-bottom: 88px;
 		}
@@ -117,7 +212,7 @@
 	color: #ffffff;
 }
 .about-me__text-block--text{
-	font-family: NunitoSans;
+	font-family: $other-font;
 	font-size: 16px;
 		@media (min-width: 415px){
 				color: #787878;
@@ -143,7 +238,7 @@
 		}
 }
 .order--header{
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
@@ -151,7 +246,7 @@
 	margin-top: 0;
 }
 .order--text{
-	font-family: NunitoSans;
+	font-family: $other-font;
 	font-size: 16px;
 	color: #787878;
 	text-align: center;
@@ -165,12 +260,13 @@
 	width: 184px;
     height: 56px;
 	text-decoration: none;
-	background-color: #10c9c3;
+	background-color: $btn-color;
 	color: #ffffff;
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 12px;
 	line-height: 7;
 	letter-spacing: 1.2px;
+	transition: transform 0.5s;
 }
 .order--btn:hover{
 	transform: scale(1.1);

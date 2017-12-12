@@ -17,7 +17,7 @@
 	.btn{
 		width: 184px;
 		height: 56px;
-		background-color: #10c9c3;
+		background-color: $btn-color;
 		border-style: none;
 		color: #ffffff;
 		padding-left: 0;
@@ -25,6 +25,7 @@
 .inputs
 	.btn:hover{
 		transform: scale(1.1);
+		transition: transform 0.5s;
 	}
 .contact-forms{
 	display: flex;
@@ -49,32 +50,43 @@
 		margin-right: 32px;
 	}
 }
+#inputs__comment{
+	resize: none;
+	height: 48px;
+	margin-bottom: 32px;
+	padding-left: 24px;
+	border-style: none;
+	font-family: $other-font;
+}
+#inputs__comment::placeholder {
+	vertical-align: middle;
+}
 .inputs{
 	display: flex;
 	flex-direction: column;
 }
 .contact-info__header{
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 30px;
 	color: #171717;
 	margin-bottom: 40px;
 	font-weight: bold;
 }
 .contact-info__text{
-	font-family: Myriad Pro;
+	font-family: $text-font;
 	font-size: 16px;
 	color: #787878;
 	margin-bottom: 32px;
 }
 .contact{
 	text-decoration: none;
-	font-family: Myriad Pro;
+	font-family: $text-font;
 	font-size: 16px;
 	color: #787878;
 	margin-bottom: 8px;
 }
 .contact-type{
-	font-family: Myriad Pro;
+	font-family: $text-font;
 	font-size: 16px;
 	color: #171717;
 	font-weight: bold;
@@ -84,13 +96,13 @@
 	flex-direction: column;
 }
 .address{
-	font-family: Myriad Pro;
+	font-family: $text-font;
 	font-size: 16px;
 	color: #787878;
 	margin-bottom: 8px;
 }
 .contact-type{
-	font-family: Myriad Pro;
+	font-family: $text-font;
 	font-size: 16px;
 	color: #171717;
 }
@@ -100,6 +112,7 @@
 		margin-bottom: 32px;
 		padding-left: 24px;
 		border-style: none;
+		font-family: $other-font;
 			@media (min-width: 600px){
 			width: 40%;
 			}
@@ -113,6 +126,7 @@
 		margin-bottom: 32px;
 		padding-left: 24px;
 		border-style: none;
+		font-family: $other-font;
 	}
 .comments{
 	width: 100%;

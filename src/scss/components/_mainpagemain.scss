@@ -1,3 +1,11 @@
+@keyframes description{
+	from {height: 0;}
+	to {height: 100%;}
+}
+@keyframes appear{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
 .main-conent{
 	display: flex;
 	align-items: center;
@@ -17,12 +25,12 @@
 		}
 }
 .main--header{
-	font-family: Montserrat;
+	font-family: $header-font;
 	font-size: 38px;
 	color: #171717;
 }
 .main--text{
-	font-family: Myriad Pro;
+	font-family: $text-font;
 	font-size: 18px;
 	color: #787878;
 }
@@ -37,21 +45,21 @@
 			overflow: visible;
 		}
 }
-.image-container__image:hover{
+.image-container__link:hover{
 	transform: scale(1.5);
+	z-index: 3;
 	@media(min-width: 600px){
 			transform: scale(1.5);
 			transform-origin: 0 50%;
+			transition: transform 1s;
 		}
 }
 .image-container:nth-child(3n+3) 
-	.image-container__link 
-		.image-container__image:hover{
+	.image-container__link:hover{
 			transform-origin: 100% 50%;
 }
 .image-container:nth-child(3n+2) 
-	.image-container__link 
-		.image-container__image:hover{
+	.image-container__link:hover{
 			transform-origin: 50% 50%;
 }
 .portfolio{
@@ -62,8 +70,32 @@
 		}
 	grid-gap: 0;
 }
-.image-container__link{
-	display: block;
-	height: auto;
-	background-color: green;
+.descriptinon{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 100%;
+	transition: background-color 0s;
 }
+.image-container__link div p{
+		opacity: 0;
+		transition: opacity 0s;
+		text-align: center;
+}
+@media (min-width: 600px){
+	.image-container__link{
+		display: block;
+		height: auto;
+		position: relative;
+	}
+	.image-container__link:hover > div{
+		background-color: rgba(255, 0, 0, 0.2);
+		transition: background-color 2s;
+	}
+	.image-container__link:hover div p{
+		opacity: 1;
+		transition: opacity 2s;
+	}
+}
+
+

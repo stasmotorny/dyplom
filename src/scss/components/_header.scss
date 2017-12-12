@@ -26,12 +26,13 @@
 	padding: 0;
 	margin-top: 32px;
 }
-.header-menu__point--link{
+.header-menu__item--link{
 	text-decoration: none;
 	color: #191919;
 	font-weight: bold;
+	font-family: $header-font;
 }
-.header-menu__point{
+.header-menu__item{
 	list-style-type: none;
 	margin-left: 8px;
 	margin-right: 8px;
@@ -40,8 +41,8 @@
 			margin-right: 0;
 		}
 }
-.header-menu__point--link:hover{
-	color: #10c9c3;
+.header-menu__item--link:hover{
+	color: $btn-color;
 }
 .logo{
 	background-image: url(../img/logo.png);

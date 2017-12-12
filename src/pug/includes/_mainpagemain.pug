@@ -1,9 +1,37 @@
 main(class="main-conent")
-	h1(class="main--header") UI\UX & Graphic Designer
-	p(class="main--text") I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.
+	h1(class="main--header") Travel Photographer
+	p(class="main--text") I am a Nature & Landscape phtographer based in Kyiv, specializing in Landscapes and Nature Portraits.
 .portfolio
 	- var o = 9;
 		- for (var p = 1; p<=o; p++)
 			.image-container
-				a(class="image-container__link" href="#")
+				a(class="image-container__link nmbr"+p href="error.html")
+					if (p<=4)
+						.descriptinon
+							p
+								span Location:
+								|Marmarossy
+							p
+								span Time:
+								|May 2016
+					else
+						if (p<=7 && p>4)
+							.descriptinon
+								p
+									span Location:
+									|Borjava
+								p
+									span Time:
+									|October 2016
+						else
+							.descriptinon
+								p
+									span Location:
+									|Zaprutski Gorgany
+								p
+									span Time:
+									|May 2017
 					img(class="image-container__image" src="img/" +p + '.jpg')
+
+					
+					
