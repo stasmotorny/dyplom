@@ -24,13 +24,16 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 0;
-	margin-top: 32px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .header-menu__item--link{
 	text-decoration: none;
 	color: #191919;
 	font-weight: bold;
 	font-family: $header-font;
+	display: block;
+	padding: 8px;
 }
 .header-menu__item{
 	list-style-type: none;

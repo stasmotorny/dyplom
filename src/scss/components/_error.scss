@@ -1,5 +1,25 @@
-@keyframes move {
+@keyframes movewide {
 	0% {bottom: -60vh;}
+	100% {bottom: 100vh;}
+}
+@keyframes move1050 {
+	0% {bottom: -80vh;}
+	100% {bottom: 100vh;}
+}
+@keyframes move800 {
+	0% {bottom: -120vh;}
+	100% {bottom: 100vh;}
+}
+@keyframes move500 {
+	0% {bottom: -140vh;}
+	100% {bottom: 100vh;}
+}
+@keyframes move450 {
+	0% {bottom: -180vh;}
+	100% {bottom: 100vh;}
+}
+@keyframes move320 {
+	0% {bottom: -200vh;}
 	100% {bottom: 100vh;}
 }
 .background{
@@ -23,7 +43,22 @@
 	font-family: $starwars;
 	color: yellow;
 	font-size: 64px;
-	animation: move 20s infinite linear;
+	animation: movewide 20s infinite linear;
 	text-align: justify;
 	position: absolute;
+	@media (max-width: 1050px){
+		animation: move1050 20s infinite linear;
+	}
+	@media (max-width: 800px){
+		animation: move800 20s infinite linear;
+	}
+	@media (max-width: 500px){
+		animation: move500 20s infinite linear;
+	}
+	@media (max-width: 450px){
+		animation: move450 20s infinite linear;
+	}
+	@media (max-width: 320px){
+		animation: move320 20s infinite linear;
+	}
 }
