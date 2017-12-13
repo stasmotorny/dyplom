@@ -46,12 +46,12 @@
 		}
 }
 .image-container__link:hover{
-	transform: scale(1.5);
+	transform: scale(1.2);
 	z-index: 3;
 	@media(min-width: 600px){
-			transform: scale(1.5);
+			transform: scale(1.2);
 			transform-origin: 0 50%;
-			transition: transform 1s;
+			transition: transform 0.3s;
 		}
 }
 .image-container:nth-child(3n+3) 
@@ -93,7 +93,7 @@
 		position: relative;
 	}
 	.image-container__link:hover > div{
-		background-color: rgba(255, 0, 0, 0.2);
+		background-color: rgba(255, 255, 255, 0.2);
 		transition: background-color 1s;
 	}
 	.image-container__link:hover div p{

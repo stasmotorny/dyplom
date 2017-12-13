@@ -17,9 +17,13 @@ $(document).ready(function(){
 	]})});
 
 $(document).ready(function(){
-    $(".comments").submit(function(){
+    $(".comments").submit(function(e){
+    	e.preventDefault()
+    	$(".name-mail").css("display","none")
+    	$(".inputs").css("display","none")
+    	$(".thanx").css("display","block")
     	var name = $("#name-mail__name").val();
-        alert("Thank you " + name);
+    	$(".thanx").html("<span>Thank you </span>" + name)
     });
 });
 
