@@ -51,8 +51,8 @@
 		}
 	padding-bottom: 72px;
 }
-::-webkit-input-placeholder{
-	font-family: $other-font;
+::-input-placeholder{
+	font-family: $other-font, $text-font;
 }
 .name-mail{
 	display: flex;
@@ -76,10 +76,10 @@
 	margin-bottom: 32px;
 	padding-left: 24px;
 	border-style: none;
-	font-family: $other-font;
+	font-family: $other-font, $text-font;
 }
 #inputs__comment::placeholder {
-	vertical-align: middle;
+	font-family: $other-font, $text-font;
 }
 .inputs{
 	display: flex;
@@ -133,7 +133,7 @@
 		margin-bottom: 32px;
 		padding-left: 24px;
 		border-style: none;
-		font-family: $other-font;
+		font-family: $other-font, $text-font;
 			@media (min-width: 600px){
 			width: 40%;
 			}
@@ -147,7 +147,7 @@
 		margin-bottom: 32px;
 		padding-left: 24px;
 		border-style: none;
-		font-family: $other-font;
+		font-family: $other-font, $text-font;
 	}
 .comments{
 	width: 100%;
